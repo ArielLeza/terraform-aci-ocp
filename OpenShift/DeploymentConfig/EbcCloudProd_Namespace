@@ -1,0 +1,65 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: ebc-cloud-prod
+  selfLink: /api/v1/namespaces/ebc-cloud-prod
+  uid: 1417a6c0-63e7-45a1-b9a2-e4f685a56300
+  resourceVersion: '30724716'
+  creationTimestamp: '2021-04-13T10:25:12Z'
+  annotations:
+    openshift.io/description: ''
+    openshift.io/display-name: ebc-cloud-prod
+    openshift.io/requester: ocadmin
+    openshift.io/sa.scc.mcs: 's0:c11,c0'
+    openshift.io/sa.scc.supplemental-groups: 1000110000/10000
+    openshift.io/sa.scc.uid-range: 1000110000/10000
+    opflex.cisco.com/endpoint-group: >-
+      {"tenant":"ocp4ebcprod1","app-profile":"EBC-Demo-1_APP","name":"HttpdService_EPG"}
+  managedFields:
+    - manager: cluster-policy-controller
+      operation: Update
+      apiVersion: v1
+      time: '2021-04-13T10:25:12Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            'f:openshift.io/sa.scc.mcs': {}
+            'f:openshift.io/sa.scc.supplemental-groups': {}
+            'f:openshift.io/sa.scc.uid-range': {}
+    - manager: openshift-apiserver
+      operation: Update
+      apiVersion: v1
+      time: '2021-04-13T10:25:12Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:openshift.io/description': {}
+            'f:openshift.io/display-name': {}
+            'f:openshift.io/requester': {}
+        'f:status':
+          'f:phase': {}
+    - manager: openshift-controller-manager
+      operation: Update
+      apiVersion: v1
+      time: '2021-04-13T10:25:12Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:finalizers': {}
+    - manager: Mozilla
+      operation: Update
+      apiVersion: v1
+      time: '2021-04-26T10:01:45Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            'f:opflex.cisco.com/endpoint-group': {}
+spec:
+  finalizers:
+    - kubernetes
+status:
+  phase: Active
